@@ -70,7 +70,7 @@ const EpisodeSelector = ({
               <li
                 className={styles.episode}
                 key={episode.id}
-                onClick={() => handleEpisodeClick(episode.episode_number)}  // 👈 Click handler added here
+                onClick={() => handleEpisodeClick(episode.episode_number ?? 1)}  // 👈 Click handler added here
                 style={{ cursor: "pointer" }}
               >
                 <div className={styles.episode__info}>
